@@ -1,0 +1,4 @@
+https://restful-booker.herokuapp.com/booking/21
+200
+<bound method Response.json of <Response [200]>>
+Data :  {'firstname': 'Josh', 'lastname': 'Allen', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'midnight snack'}
