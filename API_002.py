@@ -18,7 +18,7 @@ def main():
     assert data['firstname'] == 'John', "John is present" #Louis is present
     assert data["bookingdates"]["checkin"] == '2018-01-01','checkin date correct'
 
-    assert data["bookingdates"]["checkout"] not
+
 
 
 

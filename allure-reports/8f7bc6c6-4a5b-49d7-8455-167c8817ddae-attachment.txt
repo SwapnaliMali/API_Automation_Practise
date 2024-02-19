@@ -1,0 +1,6 @@
+Create booking Positive testcase
+{'bookingid': 18, 'booking': {'firstname': 'Swap', 'lastname': 'M', 'totalprice': 777, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Lunch'}}
+<class 'dict'>
+<class 'dict'>
+<class 'requests.models.Response'>
+<class 'dict'>

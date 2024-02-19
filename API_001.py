@@ -1,6 +1,11 @@
 # API -> Requests library is an Http library used in Python for API Automation
 # To make Http methods - CRUD methods, we need this requests library & to verify it we need Pytest
 # What to verify in API request --> url, auth, headers, cookies, data(payload),json schema validation
+# Python Testing frameworks - Pytest, Nose, Unit test
+#every test case starts with test_,
+# pytest -h  --> help
+# pytest -k  --> match substring
+# pytest -v --> verbose
 
 import requests
 
