@@ -5,7 +5,6 @@ import pytest
 
 pytest.mark.positive
 
-
 def test_create_token_positive():
     URL = "https://restful-booker.herokuapp.com/auth"
     headers = {"Content-Type": "application/json"}
@@ -22,8 +21,6 @@ def test_create_token_positive():
 
 
 pytest.mark.negative
-
-
 def test_create_token_negative():
     URL = "https://restful-booker.herokuapp.com/auth"
     headers = {"Content-Type": "application/json"}
@@ -41,7 +38,6 @@ def test_create_token_negative():
 
 
 # Put request to update full booking details
-
 
 def create_token():
     URL = "https://restful-booker.herokuapp.com/auth"

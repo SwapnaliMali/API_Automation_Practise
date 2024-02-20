@@ -1,2 +1,0 @@
-Negative test case
-<class 'requests.models.Response'>
