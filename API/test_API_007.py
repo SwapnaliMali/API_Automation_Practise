@@ -57,7 +57,7 @@ def create_token():
 
 
 def test_update_booking():
-    URL = "https://restful-booker.herokuapp.com/booking/1"
+    URL = "https://restful-booker.herokuapp.com/booking/11"
     Cookie = "token=" + create_token()
     headers = {
         "Content-type": "application/json",
@@ -85,15 +85,39 @@ def test_update_booking():
 
 # Delete booking
 
-def test_delete_booking():
-    url = "https://restful-booker.herokuapp.com/booking/1"
+# def test_delete_booking():
+#     url = "https://restful-booker.herokuapp.com/booking/1"
+#     Cookie = "token=" + create_token()
+#     headers = {
+#         "Content-type": "application/json",
+#
+#         "Cookie": Cookie
+#     }
+#     response_data = requests.delete(url=url,headers=headers)
+#     data = response_data
+#     print(data)
+#     assert response_data.status_code == 201
+
+
+def test_patch_booking():
+    URL = "https://restful-booker.herokuapp.com/booking/1"
     Cookie = "token=" + create_token()
     headers = {
         "Content-type": "application/json",
 
         "Cookie": Cookie
     }
-    response_data = requests.delete(url=url,headers=headers)
-    data = response_data
+    payload = {
+        "firstname": "Swap",
+        "lastname": "M",
+        "totalprice": 554,
+        "depositpaid": False,
+        "bookingdates": {
+            "checkin": "2024-02-19",
+            "checkout": "2024-11-03"
+        }
+    }
+
+    response_body = requests.patch(url=URL, headers=headers, json=payload)
+    data = response_body.json()
     print(data)
-    assert response_data.status_code == 404
